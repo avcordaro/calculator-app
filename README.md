@@ -7,3 +7,5 @@ This program was developed using Test-Driven-Development in Eclipse, with the JU
 The program is run using the GraphicalCalculator.jar file, which will launch the GUI version. Alternatively, the jar file can be run through the command line using *java -jar GraphicalCalculator.jar*, which will run the program with a text-based interface on the command line. 
 
 All test files for this program can be run by importing the project folder into Eclipse, and running the files as JUnit Tests.
+
+NOTE: The expression inputs to the calculator must contain spaces between each token, e.g. 3 + 5, not 3+5.
