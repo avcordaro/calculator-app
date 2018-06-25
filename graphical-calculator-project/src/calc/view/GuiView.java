@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -61,6 +62,7 @@ public class GuiView extends Application implements ViewInterface {
     VBox page = (VBox) FXMLLoader.load(GuiView.class
         .getResource("FXView.fxml"));
     Scene scene = new Scene(page);
+    primaryStage.getIcons().add(new Image("http://www.bedardcpa.net/wp-content/uploads/2016/01/impots-300x300.png"));
     primaryStage.setScene(scene);
     primaryStage.setTitle("Graphical Calculator");
     primaryStage.show();
