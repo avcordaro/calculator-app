@@ -1,10 +1,12 @@
-# Graphical Calculator
-A calculator program which parses both infix and reverse polish expressions, with a graphical user interface. 
+# Calculator App
+A calculator simple program which parses infix expressions (by evaluating it as a postfix expression, a.k.a. Reverse Polish Notation). Includes with a graphical user interface, but can also be run in text-based mode on the command line.
+
+Operators supported: Add, Subtract, Multiply and Divide (also supports decimal points).
 
 This program was developed using Test-Driven-Development in Eclipse, with the JUnit4 testing framework. All Java source code adheres to the Google coding standards. Uses the MVC Architectural design pattern.
 
 ## Running the program
-The program is run using the GraphicalCalculator.jar file, which will launch the GUI version. Alternatively, the jar file can be run through the command line using *java -jar GraphicalCalculator.jar*, which will run the program with a text-based interface on the command line. 
+The program is run using the CalculatorApp.jar file, which will launch the GUI version. Alternatively, the jar file can be run through the command line using *java -jar CalculatorApp.jar*, which will run the program with a text-based interface on the command line. 
 
 All test files for this program can be run by importing the project folder into Eclipse, and running the files as JUnit Tests.
 
