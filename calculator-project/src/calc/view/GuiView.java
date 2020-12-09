@@ -21,6 +21,7 @@ import javafx.stage.Stage;
 public class GuiView extends Application implements ViewInterface {
   
   private String input = ""; 
+  private float last_answer = 0; 
   
   @FXML
   private TextArea txtInput;
@@ -60,6 +61,8 @@ public class GuiView extends Application implements ViewInterface {
   private Button btn1;
   @FXML
   private Button btnDot;
+  @FXML
+  private Button btnAns;
   
   private static volatile GuiView instance = null;
 
@@ -121,6 +124,11 @@ public class GuiView extends Application implements ViewInterface {
    */
   public void setAnswer(String output) {
     txtInput.setText(output);
+    if(!output.equals("Unbalanced expression.") && !output.equals("Invalid expression.")) {
+    	last_answer = Float.parseFloat(output);
+    } else {
+    	last_answer = 0;
+    }
   }
 
   @FXML
@@ -176,6 +184,11 @@ public class GuiView extends Application implements ViewInterface {
   @FXML
   public void buttonDot_click() {
     input = input + ".";
+    txtInput.setText(input);
+  }
+  @FXML
+  public void buttonAns_click() {
+    input = input + last_answer;
     txtInput.setText(input);
   }
   @FXML

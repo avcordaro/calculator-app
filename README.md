@@ -1,7 +1,7 @@
 # Calculator App
 A calculator simple program which parses infix expressions (by evaluating it as a postfix expression, a.k.a. Reverse Polish Notation). Includes with a graphical user interface, but can also be run in text-based mode on the command line.
 
-Operators supported: Add, Subtract, Multiply and Divide (also supports decimal points).
+Operators supported: Add, Subtract, Multiply and Divide (also supports decimal points and previous answer as input).
 
 This program was developed using Test-Driven-Development in Eclipse, with the JUnit4 testing framework. All Java source code adheres to the Google coding standards. Uses the MVC Architectural design pattern.
 
