@@ -11,3 +11,5 @@ The program is run using the CalculatorApp.jar file, which will launch the GUI v
 All test files for this program can be run by importing the project folder into Eclipse, and running the files as JUnit Tests.
 
 NOTE: The expression inputs to the calculator must contain spaces between each token, e.g. 3 + 5, not 3+5.
+
+![screenshot](https://i.imgur.com/K84LD8E.png)
